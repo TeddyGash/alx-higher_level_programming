@@ -16,7 +16,7 @@ if __name__ == "__main__":
         result = add(int(argv[1]), int(argv[3]))
     elif (argv[2] == '-'):
         result = sub(int(argv[1]), int(argv[3]))
-    elif (argv[2] == '*)':
+    elif (argv[2] == '*'):
         result = mul(int(argv[1]), int(argv[3]))
     elif (argv[2] == '/'):
         result = div(int(argv[1]), int(argv[3]))
