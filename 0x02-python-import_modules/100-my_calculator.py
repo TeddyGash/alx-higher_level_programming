@@ -13,12 +13,12 @@ if __name__ == "__main__":
         exit(1)
 
     if argv[2] == '+':
-        result = int(argv[1]) + int(argv[3])
+        result = add(int(argv[1]), int(argv[3]))
     elif argv[2] == '-':
-        result = int(argv[1]) - int(argv[3])
+        result = sub(int(argv[1]), int(argv[3]))
     elif argv[2] == '*':
-        result = int(argv[1]) * int(argv[3])
+        result = mul(int(argv[1]), int(argv[3]))
     elif argv[2] == '/':
-        result = int(argv[1]) / int(argv[3])
+        result = div(int(argv[1]), int(argv[3]))
 
     print("{} {} {} = {}".format(argv[1], argv[2], argv[3], result))
