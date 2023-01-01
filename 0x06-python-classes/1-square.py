@@ -6,7 +6,6 @@ class Square():
     """Creates a Square class for example purposes only."""
     def __init__(self, size):
         """Initializes a Class object with private attribute of __size.
-        
         Args:
             size(int): Size of square
         """
