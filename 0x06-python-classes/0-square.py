@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""This module contains the class Square for test purposes"""
 
 
 class Square():
