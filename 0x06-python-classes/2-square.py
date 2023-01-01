@@ -11,7 +11,10 @@ class Square():
         """
         self.set_size(size)
     def set_size(self, size):
-        """Validates value of <size> by ensuring its a positive integer"""
+        """Validates value of <size> by ensuring its a positive integer.
+        Args:
+            size(int): Size of square (must be a positive integer)
+        """
         if isinstance(size, int):
             if size >= 0:
                 self.__size = size
