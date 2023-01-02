@@ -29,7 +29,9 @@ class Square():
             self.__size = value
 
     def area(self):
-        """Calculates area of the square"""
+        """Calculates area of the square
+        Returns:
+            int: area of square"""
         return self.__size ** 2
 
 
@@ -38,6 +40,8 @@ class Square():
         if self.__size == 0:
             print("")
         else:
+            for x in range(self.__position[1]):
+                print()
             for i in range(self.__size):
                 for k in range(self.__position[0]):
                     print(' ', end='')
