@@ -9,6 +9,9 @@ class Square():
         """Initializes a Class object with private attribute of __size. 
         Args:
             size(int): Size of square and must be a positive integer
+        Raises:
+            TypeError: if size not integer.
+            ValueError: if size < 0.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -18,5 +21,8 @@ class Square():
             self.__size = size
 
     def area(self):
-        """Calculates area of the square"""
+        """Calculates area of the square
+        Returns:
+            int: Area of the square
+        """
         return self.__size ** 2
