@@ -8,7 +8,8 @@ class Rectangle():
     def __init__(self, width=0, height=0):
         """Initializes a Class object with private attribute of __size.
         Args:
-            size(int): Size of square (must be a positive integer)
+            width(int): Width of Rectangle (must be a positive integer)
+            height(int): Height of Rectangle (must be a positive integer)
         """
         self.width = width
         self.height = height
@@ -22,9 +23,9 @@ class Rectangle():
     def width(self, value):
         """Sets the value of __width"""
         if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+            raise TypeError("width must be an integer")
         elif value < 0:
-            raise ValueError("size must be >= 0")
+            raise ValueError("width must be >= 0")
         else:
             self.__width = value
 
@@ -37,8 +38,8 @@ class Rectangle():
     def height(self, value):
         """Sets the value of __height"""
         if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+            raise TypeError("height must be an integer")
         elif value < 0:
-            raise ValueError("size must be >= 0")
+            raise ValueError("height must be >= 0")
         else:
             self.__height = value
