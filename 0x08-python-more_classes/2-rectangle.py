@@ -6,7 +6,7 @@ class Rectangle():
     """Creates a Rectangle class for example purposes only and validates value of <size>."""
 
     def __init__(self, width=0, height=0):
-        """Initializes a Class object with private attribute of __size.   
+        """Initializes a Class object with private attribute of __size. 
         Args:
             size(int): Size of square (must be a positive integer)
             height(int): Height of the Square (must be a positive integer)
