@@ -3,7 +3,7 @@
 
 
 class Rectangle():
-    """Creates a Rectangle class for example purposes only and validates value of <size>."""
+    """Creates a Rectangle class for example purposes only."""
 
     def __init__(self, width=0, height=0):
         """Initializes a Class object with private attribute of __size.
